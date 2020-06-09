@@ -1,3 +1,20 @@
+#def find_max_value(array)
+ # array.sort!
+  #array[-1]
+# end
+
+# both works but below is looping
+
 def find_max_value(array)
-  # Add your solution here
-end
+  count = 0 
+  
+  max = -1
+  
+  while count < array.length do
+    if max < array[count]
+      max = array[count]
+    end
+    count += 1 
+  end
+  max
+end 
